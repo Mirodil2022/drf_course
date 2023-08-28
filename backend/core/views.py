@@ -23,7 +23,7 @@ class ContactAPIView(views.APIView):
     def get_serializer(self, *args, **kwargs):
         kwargs['context'] = self.get_serializer_context()
         return self.serializer_class(*args, **kwargs)
-
+#testing some commit
     def post(self, request):
         try:
             data = JSONParser().parse(request)
